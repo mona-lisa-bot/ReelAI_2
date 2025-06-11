@@ -1,1 +1,1 @@
- handled_folders=[f.strip() for f in handled_folders]
+handled_folders=[f.strip() for f in handled_folders]
