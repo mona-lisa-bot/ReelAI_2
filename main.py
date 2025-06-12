@@ -24,15 +24,24 @@ def create():
             print(key,value)#key:filenumber, value:file name 
             #uploading the file 
             file=request.files[key]
+            input_files=[]
             if file :
                 filename = secure_filename(file.filename)
                 if(not(os.path.exists(os.path.join(app.config['UPLOAD_FOLDER'], upload_id)))):
                      os.mkdir(os.path.join(app.config['UPLOAD_FOLDER'], upload_id))
                 file.save(os.path.join(app.config['UPLOAD_FOLDER'], upload_id,filename))
+                input_files.append(filename)
 
                 #also save the text in the same folder
                 with open(os.path.join(app.config['UPLOAD_FOLDER'], upload_id,"prompt.txt"),"w") as f:
                     f.write(prompt)
+
+            for f1 in input_files:
+                with open(os.path.join(app.config['UPLOAD_FOLDER'], upload_id,"input.txt"),"a") as f:
+                    f.write(f"file '{app.config['UPLOAD_FOLDER']}/{upload_id}/{f1}'\nduration 1\n")
+
+                
+    
 
     return render_template("create.html", meid=meid)
 
