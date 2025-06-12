@@ -1,0 +1,4 @@
+file 'user_uploads/580a880b-4738-11f0-8fbd-c43d1ada40bb/<_io.TextIOWrapper name='user_uploads\\580a880b-4738-11f0-8fbd-c43d1ada40bb\\input.txt' mode='a' encoding='cp1252'>'
+duration 1
+file 'user_uploads/580a880b-4738-11f0-8fbd-c43d1ada40bb/<_io.TextIOWrapper name='user_uploads\\580a880b-4738-11f0-8fbd-c43d1ada40bb\\input.txt' mode='a' encoding='cp1252'>'
+duration 1
