@@ -1,0 +1,12 @@
+file 'DSCN0241.JPG'
+duration 1
+file 'DSCN0241.JPG'
+duration 1
+file '01.jpg'
+duration 1
+file 'DSCN0241.JPG'
+duration 1
+file '01.jpg'
+duration 1
+file 'moo_deng.jpeg'
+duration 1
