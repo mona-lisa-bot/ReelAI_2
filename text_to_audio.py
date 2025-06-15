@@ -15,7 +15,7 @@ def text_to_speech_file(text: str, folder: str) -> str:
     response = elevenlabs.text_to_speech.convert(
         voice_id="pNInz6obpgDQGcFmaJgB", # Adam pre-made voice
         output_format="mp3_22050_32",
-        text=text,#for folder in user_upload textprompt.txt
+        text=text,#for folder in user_upload text prompt.txt
         model_id="eleven_turbo_v2_5", # use the turbo model for low latency
         # Optional voice settings that allow you to customize the output
         voice_settings=VoiceSettings(
@@ -23,7 +23,7 @@ def text_to_speech_file(text: str, folder: str) -> str:
             similarity_boost=1.0,
             style=0.0,
             use_speaker_boost=True,
-            speed=1.0,
+            speed=0.8,
         ),
     )
 
@@ -44,6 +44,6 @@ def text_to_speech_file(text: str, folder: str) -> str:
     # Return the path of the saved audio file
     return save_file_path
 
-# text_to_speech_file("do u know, today is wednesday","36c5a29f-45be-11f0-b6a0-74d4dd057120")
+
 
 
